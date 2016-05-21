@@ -10,7 +10,7 @@ header nav
     height: 40px;
     color: rgb(74, 74, 74);
     position: absolute;
-    left: 50%;
+    left: 36%;
     font-family: Roboto;
     font-size: 16px;
     letter-spacing: 0.5px;
@@ -43,6 +43,18 @@ header:after
 }
 
 .header_link:visited
+{
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+}
+
+.header_link:active
+{
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+}
+
+.header_link:link
 {
     color: rgb(74, 74, 74);
     text-decoration: none;

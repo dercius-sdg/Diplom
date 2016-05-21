@@ -32,7 +32,7 @@ form
 
 .input-fild
 {
-    border-radius: 5px;
+    border-radius: 4px;
     box-shadow: 0 0 7px rgb(240, 248, 255);
 }
 
@@ -46,10 +46,12 @@ form
 {
     font-size: 18px ;
     font-family: Roboto;
-    border-radius: 5px;
+    border-radius: 4px;
     position: absolute;
     bottom: 0;
-    right: 10%;
+    right: 15%;
+    padding: 6px 27px;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2));
 }
 
 #button:hover
