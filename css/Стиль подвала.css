@@ -85,7 +85,7 @@ footer
 
 #VKlink, #FBlink, #INSTlink, #YTlink
 {
-    background-image: url("social-spritesheet-round.png");
+    background-image: url("../img/social-spritesheet-round.png");
     display: inline-block;
     height: 65px;
     width: 65px;

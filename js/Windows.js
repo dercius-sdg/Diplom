@@ -2,7 +2,7 @@
  * Created by ХП on 15.05.2016.
  */
 function toRegPage() {
-    document.location.href = "Registration.html"
+    document.location.href = "../public html/Registration.html"
 }
 
 function rollDownRegistration()
