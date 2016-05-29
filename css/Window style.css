@@ -17,10 +17,9 @@
     width: 200px;
     height: 110px;
     position: absolute;
-    top: 139px;
-    right: 55px;
-    visibility: collapse;
-    transition: visibility 1000s ease;
+    top: 140px;
+    right: 72px;
+    display: none;
 }
 
 #Window:after
