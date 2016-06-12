@@ -15,5 +15,5 @@ $(document).ready(function() {
 );
 
 function toRegPage() {
-    document.location.href = "../public html/Registration.html"
+    document.location.href = "public html/Registration.html"
 }
