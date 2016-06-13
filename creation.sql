@@ -81,7 +81,7 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`Comments` (
   `Com_text` TEXT NULL ,
   `Com_date` DATETIME NULL ,
   PRIMARY KEY (`idComments`) ,
-  CONSTRAINT `idRegistration`
+  CONSTRAINT `idRegistrationComments`
     FOREIGN KEY (`idRegistration` )
     REFERENCES `mydb`.`Registration` (`idRegistration` )
     ON DELETE NO ACTION
@@ -131,7 +131,6 @@ CREATE INDEX `fk_Rent_Equipment1_idx` ON `mydb`.`Rent` (`Equipment_idEquipment` 
 CREATE  TABLE IF NOT EXISTS `mydb`.`Video_services` (
   `idVideo_services` VARCHAR(10) NOT NULL ,
   `Vids_view` VARCHAR(100) NOT NULL ,
-  `Vids_price` TINYTEXT NOT NULL ,
   `Vids_price` INT NOT NULL ,
   PRIMARY KEY (`idVideo_services`) )
 ENGINE = InnoDB;
