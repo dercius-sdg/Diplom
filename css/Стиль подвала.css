@@ -2,7 +2,7 @@
 
 footer
 {
-    height: 25%;
+    height: 400px;
     width: 100%;
     background: rgb(51, 51, 51);
     position: absolute;
@@ -10,7 +10,6 @@ footer
     bottom: 0;
     color: white;
     box-sizing: border-box;
-    min-height: 371px;
 }
 
 #footer ul

@@ -1,0 +1,34 @@
+#personal_content
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1098px;
+}
+.employee_block
+{
+    display: inline-block;
+    width: 250px;
+    height: 405px;
+    margin: 10px 52px;
+    padding: 4px;
+    vertical-align: top;
+}
+.employee_block img
+{
+    width: 250px;
+    height: 265px;
+}
+.employee_block h2,h3
+{
+    font-family: Roboto;
+    text-align: center;
+}
+.employee_block h3
+{
+    font-size: 1em;
+}
+.employee_block h2
+{
+    font-size: 1.1em;
+}

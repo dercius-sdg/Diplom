@@ -9,18 +9,19 @@ html
 body
 {
     height: 100%;
-    padding-bottom: 30%;
+    padding-bottom: 400px;
 }
 
 #wrapper
 {
-    height: 532px;
     width: 85%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 175px;
+    margin-top: 175px;
     min-height: 100%;
+    background: white;
+    padding-top: 20px;
 }
 
 .service_img
@@ -36,7 +37,7 @@ H1
     font-family: Roboto;
     text-align: center;
 }
-li a
+#descr li a
 {
     font-family: Roboto;
     font-size: 16pt;
@@ -45,11 +46,50 @@ li a
     text-decoration: none;
 }
 
-li
+#descr li
 {
     font-family: Roboto;
     font-size: 16pt;
     font-weight: bold;
     margin-top: 9px;
     margin-bottom: 25px
+}
+#portfolio
+{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+#portfolio ul
+{
+    width: 2500px;
+    height: 300px;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin:0;
+    margin-left: 3px;
+    padding: 0;
+}
+#portfolio ul li
+{
+    width:500px;
+    height: 300px;
+    display: inline-block;
+    margin:0;
+    margin-left: -4px;
+}
+#portfolio ul li img
+{
+    width:inherit;
+    height: inherit;
+}
+#portfolio-content
+{
+    width: inherit;
+    height: 300px;
+    margin-bottom: 10px;
 }
