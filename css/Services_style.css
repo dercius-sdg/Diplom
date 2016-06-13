@@ -4,6 +4,8 @@
     height: 450px;
     overflow-x: hidden;
     position: relative;
+    float: left;
+    margin-right: 7px;
 }
 #photo_gallery ul
 {
@@ -34,4 +36,36 @@
     display: block;
     margin:0;
 
+}
+body
+{
+    !important;
+    padding-bottom: 0;
+}
+
+#order_container
+{
+    float: right;
+    width: 300px;
+    height: 150px;
+}
+#order_container form input
+{
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    width: 200px;
+    height: 70px;
+    background: #f5e79e;
+    box-shadow: 0 0 20px -2px #985f0d;
+    border: none;
+    border-radius: 21px;
+}
+#order_container form input:focus
+{
+    outline: none;
+}
+#content-container
+{
+    text-align: justify;
 }
