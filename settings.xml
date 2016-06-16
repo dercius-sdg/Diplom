@@ -1,0 +1,8 @@
+<xml>
+<server_database port="3306" address="localhost">
+<database name="mydb">
+<user name="root">
+</user>
+</database>
+</server_database>
+</xml>
