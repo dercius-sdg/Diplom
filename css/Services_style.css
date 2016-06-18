@@ -2,7 +2,7 @@
 {
     width: 586px;
     height: 450px;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     float: left;
     margin-right: 7px;

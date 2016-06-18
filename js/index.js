@@ -1,7 +1,8 @@
 /**
  * Created by ХП on 12.06.2016.
  */
-$(document).ready(function() {
+$(document).ready(
+    function() {
     $("#descr").find("li").hover(
         function () {
             $(this).css("background", "black");
@@ -22,6 +23,44 @@ $(document).ready(function() {
                     document.location.href=$(this).find("a").attr("href");
                 }
             }
-        )
+        );
+        setInterval(
+            function()
+            {
+                var portfolios=$(".portfolio").toArray();
+
+                function setIntervalForSliding(counter_inner) {
+                    setTimeout(
+                        function () {
+                            console.log(counter_inner);
+                            var left_css_string = $(portfolios[counter_inner]).find("ul").css("left");
+                            console.log(left_css_string);
+                            left_css_string = left_css_string.substr(0, left_css_string.length - 2);
+                            var left_css = +left_css_string;
+                            if (left_css > ($(portfolios[counter_inner]).find("ul").find("li").length-1)*(-500)) {
+                                $(portfolios[counter_inner]).find("ul").animate(
+                                    {
+                                        left: left_css - 500
+                                    }, 1000
+                                );
+                            }
+                            else {
+                                $(portfolios[counter_inner]).find("ul").css("left","0");
+                                $(portfolios[counter_inner]).find("ul").animate(
+                                    {
+                                        left: - 500
+                                    }, 1000
+                                );
+                            }
+                        }, 1000
+                    );
+                }
+
+                for(var counter=0;counter<portfolios.length;counter++)
+                {
+                    setIntervalForSliding(counter);
+                }
+            },5000
+        );
 }
 );
