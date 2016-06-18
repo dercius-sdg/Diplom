@@ -12,7 +12,6 @@ final class DBConnector
     private $server_address;
     private $port;
     private $user;
-    private $password;
 
     /**
      * @param $database
@@ -39,5 +38,9 @@ final class DBConnector
     public function getConnection()
     {
         return $this->connection;
+    }
+    public function checkConnection()
+    {
+        return getConnection()->coonect_errno=0;
     }
 }

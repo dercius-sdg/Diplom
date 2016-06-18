@@ -8,8 +8,25 @@
 
 <code><?php
     require_once($_SERVER['DOCUMENT_ROOT'].'/PHP Classes/DBConnector.php');
+    require_once($_SERVER['DOCUMENT_ROOT'].'/PHP Classes/User.php');
     $dbConnect=new DBConnector("mydb",'dercius6082');
-    echo $dbConnect->getConnection()->connect_errno;
+    $user=new User('dercius','dercius6082',$dbConnect);
+    print $user->getId()."<br/>";
+    echo $user->getName()."<br/>";
+    echo $user->getSurrname()."<br/>";
+    echo $user->getLastname()."<br/>";
+    echo $user->getPhones()."<br/>";
+    echo $user->getBirthday()."<br/>";
+    echo $user->getEmail()."<br/>";
+    $user->setName('Дмитрий');
+    echo "<br/>";
+    print $user->getId()."<br/>";
+    echo $user->getName()."<br/>";
+    echo $user->getSurrname()."<br/>";
+    echo $user->getLastname()."<br/>";
+    echo $user->getPhones()."<br/>";
+    echo $user->getBirthday()."<br/>";
+    echo $user->getEmail()."<br/>";
 ?></code>
 </body>
 </html>
