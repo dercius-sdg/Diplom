@@ -1,29 +1,4 @@
 @charset "UTF-8";
-
-html
-{
-    min-height: 100%;
-    position: relative;
-}
-
-body
-{
-    height: 100%;
-    padding-bottom: 400px;
-}
-
-#wrapper
-{
-    width: 85%;
-    position: relative;
-    min-height: 100%;
-    background: white;
-    padding-top: 60px;
-    padding-bottom: 25px;
-    margin: 175px auto 150px;
-    box-shadow: 0 0 21px -2px rgb(211, 211, 211);
-}
-
 .service_img
 {
     float: left;
@@ -90,11 +65,16 @@ H1
     width: inherit;
     height: 300px;
     margin: 20px auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
 }
 .portfolio-content p
 {
     max-width: 100%;
-    margin-left: 525px;
+    position: relative;
+    height: inherit;
+
 }
 #title-block
 {
@@ -102,4 +82,111 @@ H1
     min-height: 525px;
     width: inherit;
     margin: 0 auto 105px;
+}
+.portfolio-content .to-portfolio
+{
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 40px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    background: black;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    bottom:0;
+}
+
+.to-portfolio
+{
+    text-decoration: none;
+    color:white;
+}
+
+.left-sided
+{
+    left: 100px;
+}
+
+.right-sided
+{
+    right: 100px;
+}
+p.left-sided
+{
+    margin-right: 600px;
+    margin-left: 22px;
+}
+p.right-sided
+{
+    margin:0 165px 0 525px;
+}
+#comment-ribbon
+{
+    width: 1350px;
+    height: 264px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#comment-ribbon ul
+{
+    width: 4690px;
+    height: 250px;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 7px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+li.comment
+{
+    display: inline-block;
+    width: 645px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: top;
+    height: inherit;
+    position: relative;
+}
+.comment p
+{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 5px;
+    height: 85px;
+    border:3px solid rgb(211, 211, 211);
+    background: rgb(211, 211, 211);
+}
+.comment p:after
+{
+    content: '';
+    position: absolute;
+    bottom: 84px;
+    right: 81px;
+    border: 20px solid transparent;
+    border-top: 30px solid rgb(211, 211, 211);
+}
+.comment img
+{
+    position: absolute;
+    bottom: 12px;
+    right: 55px;
+}
+#more-comments
+{
+    outline: 2px solid black;
+    margin: 20px auto 150px;
+    width: 250px;
+    height: 60px;
+    display: block;
+    font-family: Roboto;
+    font-size: 20px;
+    border:5px solid white;
+    background: black;
+    color: white;
 }

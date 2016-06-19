@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="/css/Стиль%20шапки.css" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-    <link rel="stylesheet" href="../css/font-awesome.css">
-    <link href="/css/Стиль%20подвала.css" rel="stylesheet" type="text/css">
-    <link rel = icon href="../logo/logo_KK_2015_v13.png">
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
-    <link href="/css/Window%20style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel = icon href="/logo/logo_KK_2015_v13.png">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="/css/index.css" charset="UTF-8" rel="stylesheet" type="text/css">
-    <link href="/css/addressField.css" rel="stylesheet" type="text/css">
-    <link href="/css/Services_style.css" charset="UTF-8" rel="stylesheet" type="text/css">
     <script src="/js/jquery-2.2.3.min.js" charset="utf-8"></script>
     <script src="/js/Windows.js" charset="utf-8" type="text/javascript"></script>
-    <script src="/js/Services.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/js/index.js" charset="utf-8" type="text/javascript"></script>
     <title>Киностудия "KINOKRUT LABORATORY"</title>
 </head>
+<body>
 <div id="header">
     <header>
         <img src = "/logo/logo_KK_2015_v13.png">
@@ -43,26 +40,36 @@
     </header>
 </div>
 <div id="wrapper">
-    <H1>Аренда фотостудии</H1>
-<div id="photo_gallery">
-    <ul>
-        <li> <img class = "service_img" src="/img/70826005_0C6D2202rs550.jpg" width="586px" height="450px"></li>
-        <li> <img class = "service_img" src="/img/fstudio_fstudio.jpg" width="586px" height="450px"></li>
-        <li> <img class = "service_img" src="/img/photostudio_03.jpg" width="586px" height="450px"></li>
-    </ul>
+    <h1>Открытые заказы на оплату</h1>
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+               <td>Номер заказа</td>
+                <td>ФИО клиента</td>
+                <td>Стоимость заказа</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                0000052365
+            </td>
+            <td>
+                Сущевский Дмитрий Германович
+            </td>
+            <td>
+                4500
+            </td>
+            <td>
+                <button class="btn btn-success">Оплатить заказ</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </div>
-    <div id="order_container">
-        <form>
-            <input type="button" value="Оформить заказ">
-        </form>
-    </div>
-    <div id="content-container">
-        Здесь будет некоторый текст
-    </div>
-
-
-</div>
-
-<address>
-    &copy; Компания «Kinokrut Laboratory», Казань 2016 г.
-</address>
+        <address>
+            &copy; Компания «Kinokrut Laboratory», Казань 2016 г.
+        </address>
+</body>
+</html>
