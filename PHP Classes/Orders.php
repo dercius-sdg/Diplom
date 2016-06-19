@@ -46,7 +46,7 @@ class Orders
     public function setServicesIdServices($services_IdServices)
     {
         $this->services_IdServices = $services_IdServices;
-        $query="update registration set Services_IdServices='".$services_IdServices."' where idUser='".$this->id."'";
+        $query="update orders set Services_IdServices='".$services_IdServices."' where idUser='".$this->id."'";
         $result=$this->connector->getConnection()->query($query);
     }
     /**
@@ -63,7 +63,7 @@ class Orders
     public function setDateOrders($date_orders)
     {
         $this->Date_orders = $date_orders;
-        $query="update registration set Date_orders='".$date_orders."' where idUser='".$this->id."'";
+        $query="update orders set Date_orders='".$date_orders."' where idUser='".$this->id."'";
         $result=$this->connector->getConnection()->query($query);
     }
 
@@ -81,7 +81,7 @@ class Orders
     public function setPurchase($purchase)
     {
         $this->Purchase = $purchase;
-        $query="update registration set Purchase='".$purchase."' where idUser='".$this->id."'";
+        $query="update orders set Purchase='".$purchase."' where idUser='".$this->id."'";
         $result=$this->connector->getConnection()->query($query);
     }
 

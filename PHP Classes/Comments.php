@@ -49,7 +49,7 @@ class Comments
     public function setComText($Com_text)
     {
         $this->Com_text = $Com_text;
-        $query="update registration Com_text='".$Com_text."' where idUser='".$this->id."'";
+        $query="update comments Com_text='".$Com_text."' where idUser='".$this->id."'";
         $result=$this->connector->getConnection()->query($query);
     }
 
@@ -67,7 +67,7 @@ class Comments
     public function setIdComments($idComments)
     {
         $this->idComments = $idComments;
-        $query="update registration idComments='".$idComments."' where idUser='".$this->id."'";
+        $query="update comments idComments='".$idComments."' where idUser='".$this->id."'";
         $result=$this->connector->getConnection()->query($query);
     }
 
@@ -85,7 +85,7 @@ class Comments
     public function setComeDate($Come_date)
     {
         $this->Come_date = $Come_date;
-        $query="update registration Come_date='".$Come_date."' where idUser='".$this->id."'";
+        $query="update comments Come_date='".$Come_date."' where idUser='".$this->id."'";
         $result=$this->connector->getConnection()->query($query);
     }
 }
