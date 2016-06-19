@@ -3,22 +3,22 @@
 #Window
 {
     position: relative;
-    width: inherit;
-    height: inherit;
+    width: 254px;
+    height: 122px;
     font-size: 18px ;
     font-family: Roboto;
     font-weight: 400;
-    border-radius: 4px;
     padding: 6px 27px;
+    border-radius: 4px;
     background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2));
 }
 #triangle_container
 {
-    width: 200px;
-    height: 110px;
+    width: 254px;
+    height: 122px;
     position: absolute;
-    top: 140px;
-    right: 72px;
+    top: 137px;
+    right: 18px;
     display: none;
 }
 
@@ -30,4 +30,16 @@
     left: 193px;
     border: 15px solid transparent;
     border-bottom: 20px solid rgba(0,0,0,0.1);
+}
+#Window input[type=text]
+{
+    font-family: Roboto, sans-serif;
+    font-size:14px;
+    height: 23px;
+}
+#Window .btn
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
 }

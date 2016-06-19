@@ -2,6 +2,7 @@
 address
 {
     position: absolute;
+    margin-bottom: 0;
     display: block;
     bottom: -94px;
     background: rgb(51, 51, 51);
