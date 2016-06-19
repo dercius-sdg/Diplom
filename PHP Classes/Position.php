@@ -44,7 +44,7 @@ class Position
     public function setPositionView($Position_view)
     {
         $this->Position_view = $Position_view;
-        $query="update registration set Position_view='".$Position_view."' where idPosition='".$this->id."'";
+        $query="update position set Position_view='".$Position_view."' where idPosition='".$this->id."'";
         $result=$this->connector->getConnection()->query($query);
     }
 }

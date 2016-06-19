@@ -42,40 +42,6 @@ class Employees
     /**
      * @return mixed
      */
-    public function getEmpPhoto()
-    {
-        return $this->Emp_photo;
-    }
-
-    /**
-     * @param mixed $PEmp_photo
-     */
-    public function setEmpPhoto($Emp_photo)
-    {
-        $this->Emp_photo = $Emp_photo;
-        $query="update registration set Emp_photo='".$Emp_photo."' where idEmployees='".$this->id."'";
-        $result=$this->connector->getConnection()->query($query);
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getIdEmployees()
-    {
-        return $this->idEmployees;
-    }
-
-    /**
-     * @param mixed $idEmployees
-     */
-    public function setIdEmployees($idEmployees)
-    {
-        $this->idEmployees = $idEmployees;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getEmpName()
     {
         return $this->Emp_Name;
@@ -87,6 +53,8 @@ class Employees
     public function setEmpName($Emp_Name)
     {
         $this->Emp_Name = $Emp_Name;
+        $query="update employees set Emp_Name='".$Emp_Name."' where idEmployees='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 
     /**
@@ -103,6 +71,8 @@ class Employees
     public function setEmpSurname($Emp_Surname)
     {
         $this->Emp_Surname = $Emp_Surname;
+        $query="update employees set Emp_Surname='".$Emp_Surname."' where idEmployees='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 
     /**
@@ -119,6 +89,8 @@ class Employees
     public function setEmpLastname($Emp_Lastname)
     {
         $this->Emp_Lastname = $Emp_Lastname;
+        $query="update employees set Emp_Lastname='".$Emp_Lastname."' where idEmployees='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 
     /**
@@ -135,6 +107,8 @@ class Employees
     public function setEmpDateofBirth($Emp_DateofBirth)
     {
         $this->Emp_DateofBirth = $Emp_DateofBirth;
+        $query="update employees set Emp_DateofBirth='".$Emp_DateofBirth."' where idEmployees='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 
     /**
@@ -151,5 +125,15 @@ class Employees
     public function setEmpPhoto($Emp_photo)
     {
         $this->Emp_photo = $Emp_photo;
+        $query="update employees set Emp_photo='".$Emp_photo."' where idEmployees='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdEmployees()
+    {
+        return $this->idEmployees;
     }
 }
