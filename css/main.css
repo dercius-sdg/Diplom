@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import "Стиль%20подвала.css";
+@import "Стиль%20шапки.css";
+@import "Window%20style.css";
+html
+{
+    min-height: 100%;
+    position: relative;
+}
+
+body
+{
+    height: 100%;
+    padding-bottom: 400px;
+}
+
+#wrapper
+{
+    width: 85%;
+    position: relative;
+    min-height: 100%;
+    background: white;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    margin: 175px auto 110px;
+    box-shadow: 0 0 21px -2px rgb(211, 211, 211);
+}
