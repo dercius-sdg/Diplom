@@ -73,6 +73,7 @@ footer
     font-family: sans-serif;
     font-style: normal;
     position: absolute;
+    margin-bottom: 0;
 }
 
 #scl

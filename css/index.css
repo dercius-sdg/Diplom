@@ -64,7 +64,7 @@ H1
 {
     width: inherit;
     height: 300px;
-    margin: 20px auto;
+    margin: 65px auto;
     padding-left: 100px;
     padding-right: 100px;
     position: relative;
@@ -74,6 +74,7 @@ H1
     max-width: 100%;
     position: relative;
     height: inherit;
+    font-size: 1.4em;
 
 }
 #title-block
@@ -81,7 +82,7 @@ H1
     height: auto;
     min-height: 525px;
     width: inherit;
-    margin: 0 auto 105px;
+    margin: 0 auto 50px;
 }
 .portfolio-content .to-portfolio
 {
@@ -100,9 +101,15 @@ H1
 
 .to-portfolio
 {
-    text-decoration: none;
+    text-decoration: initial;
     color:white;
 }
+.to-portfolio:hover
+{
+    text-decoration: initial;
+    color:white;
+}
+
 
 .left-sided
 {
@@ -117,10 +124,11 @@ p.left-sided
 {
     margin-right: 600px;
     margin-left: 22px;
+    padding-right: 30px;
 }
 p.right-sided
 {
-    margin:0 165px 0 525px;
+    padding-left: 626px;
 }
 #comment-ribbon
 {
@@ -132,7 +140,7 @@ p.right-sided
 }
 #comment-ribbon ul
 {
-    width: 4690px;
+    width: 4693px;
     height: 250px;
     display: block;
     margin-bottom: 0;
@@ -158,7 +166,8 @@ li.comment
     font-size: 16px;
     font-weight: 300;
     padding: 5px;
-    height: 85px;
+    margin: 0;
+    height: 116px;
     border:3px solid rgb(211, 211, 211);
     background: rgb(211, 211, 211);
 }
@@ -189,4 +198,9 @@ li.comment
     border:5px solid white;
     background: black;
     color: white;
+}
+.portfolio-header{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 70px;
 }

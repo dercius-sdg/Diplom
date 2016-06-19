@@ -37,9 +37,10 @@ header:after
     margin-right: 15px;
     display: inline-block;
     vertical-align: middle;
-    text-decoration: none;
+    text-decoration: initial
     text-align: center;
     padding: 10px 15px;
+    color:rgb(74,74,74);
 }
 
 .header_link:visited
@@ -62,6 +63,7 @@ header:after
 
 .header_link:hover
 {
+    text-decoration: initial;
     background: black;
     color: white;
     box-sizing: content-box;
