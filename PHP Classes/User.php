@@ -102,6 +102,8 @@ class User
     public function setSurrname($surrname)
     {
         $this->surrname = $surrname;
+        $query="update registration set Name='".$surrname."' where idRegistration='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 
     /**
@@ -118,6 +120,8 @@ class User
     public function setLastname($lastname)
     {
         $this->lastname = $lastname;
+        $query="update registration set Name='".$lastname."' where idRegistration='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 
     /**
@@ -134,6 +138,8 @@ class User
     public function setPhones($phones)
     {
         $this->phones = $phones;
+        $query="update registration set Name='".$phones."' where idRegistration='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 
     /**
@@ -150,6 +156,8 @@ class User
     public function setBirthday($birthday)
     {
         $this->birthday = $birthday;
+        $query="update registration set Name='".$birthday."' where idRegistration='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 
     /**
@@ -166,6 +174,8 @@ class User
     public function setEmail($email)
     {
         $this->email = $email;
+        $query="update registration set Name='".$email."' where idRegistration='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
     /**
      * @return mixed
@@ -181,5 +191,7 @@ class User
     public function setId($id)
     {
         $this->id = $id;
+        $query="update registration set Name='".$id."' where idRegistration='".$this->id."'";
+        $result=$this->connector->getConnection()->query($query);
     }
 }
