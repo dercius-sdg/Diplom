@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import "http://webfonts.ru/import/roboto.css";
+/*
+	Roboto, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic, 900, 900 italic
+*/
+
+
+h2
+{
+    text-align: center;
+}
+.container-row
+{
+    width: 60%;
+    display: block;
+    margin: 60px auto 0;
+}
+.content-row
+{
+    margin: 30px 0;
+}
+.result-summ-col
+{
+    padding-right: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#eq-list ul
+{
+    list-style: none inside none;
+    padding-left: 0;
+    display: block;
+    height: 300px;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#eq-list ul li
+{
+    display: block;
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+    width: inherit;
+    line-height: 50px;
+    height: 50px;
+    font-family: Roboto;
+    box-sizing: content-box;
+    border: 2px solid #122b40;
+    margin: 1px 0;
+    position: relative;
+}
+.selected
+{
+    background: limegreen;
+    color: white;
+}
+.clicked
+{
+    background: #286090;
+    color: whitesmoke;
+}
+.icon
+{
+    position: absolute;
+    right: 5px;
+    top:0;
+    line-height: 50px;
+}
+#apart-list ul
+{
+    list-style: none inside none;
+    padding-left: 0;
+    display: block;
+    height: 300px;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#apart-list ul li
+{
+    display: block;
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+    width: inherit;
+    line-height: 50px;
+    height: 50px;
+    font-family: Roboto;
+    box-sizing: content-box;
+    border: 2px solid #122b40;
+    margin: 1px 0;
+    position: relative;
+}
+#apart-image
+{
+    height: 300px;
+    width: 100%;
+    border: 0px;
+}
+#eq-image
+{
+    height: 300px;
+    width: 100%;
+}
+
