@@ -3,21 +3,21 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1098px;
+    width: 1108px;
 }
 .employee_block
 {
     display: inline-block;
-    width: 250px;
-    height: 405px;
+    width: 254px;
+    height: 480px;
     margin: 10px 52px;
     padding: 4px;
     vertical-align: top;
 }
 .employee_block img
 {
-    width: 250px;
-    height: 265px;
+    width: 254px;
+    height: 367px;
 }
 .employee_block h2,h3
 {
@@ -31,4 +31,8 @@
 .employee_block h2
 {
     font-size: 1.1em;
+}
+h1
+{
+    text-align: center;
 }

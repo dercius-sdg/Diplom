@@ -78,3 +78,8 @@ $(document).ready(
         );
 }
 );
+
+function toVimio()
+{
+    document.location.href="https://vimeo.com/133304588";
+}
