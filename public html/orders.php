@@ -75,9 +75,9 @@
             <span class="col-lg-4">Количество времени</span>
             <input class="col-lg-3 col-lg-offset-5" type="number"/>
         </div>
-        <div class="row content-row">
-            <span class="col-lg-4">Сумма по услугам</span>
-            <span class="col-lg-offset-6 col-lg-2 result-summ-col">1500</span>
+        <div id="immediate_summ" class="row content-row">
+            <span class="col-lg-5">Сумма по услугам</span>
+            <span class="col-lg-offset-5 col-lg-2 result-summ-col">1500</span>
         </div>
     </div>
     <h2>Ваш заказ на оборудование</h2>
@@ -99,9 +99,9 @@
 
             </div>
         </div>
-        <div class="row content-row">
-            <span class="col-lg-4">Сумма по оборудованию</span>
-            <span class="col-lg-offset-6 col-lg-2 result-summ-col">1500</span>
+        <div id="immediate_summ" class="row content-row">
+            <span class="col-lg-5">Сумма по оборудованию</span>
+            <span class="col-lg-offset-5 col-lg-2 result-summ-col">1500</span>
         </div>
     </div>
 
@@ -120,9 +120,14 @@
 
             </div>
         </div>
-        <div class="row content-row">
-            <span class="col-lg-4">Сумма по аренде помещений</span>
-            <span class="col-lg-offset-6 col-lg-2 result-summ-col">1500</span>
+        <div id="immediate_summ" class="row content-row">
+            <span class="col-lg-5">Сумма по аренде помещений</span>
+            <span class="col-lg-offset-5 col-lg-2 result-summ-col">1500</span>
+        </div>
+
+        <div id="result_summ" class="row content-row">
+            <span class="col-lg-6">Итоговая сумма заказа</span>
+            <span class="col-lg-offset-4 col-lg-2 result-summ-col">4500</span>
         </div>
     </div>
 </div>

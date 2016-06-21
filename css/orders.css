@@ -97,11 +97,18 @@ h2
 {
     height: 300px;
     width: 100%;
-    border: 0px;
 }
 #eq-image
 {
     height: 300px;
     width: 100%;
+}
+#result_summ
+{
+    font-size: 36px;
+}
+#immediate_summ
+{
+    font-size: 25px;
 }
 
