@@ -6,7 +6,8 @@
  * Date: 22.06.2016
  * Time: 19:14
  */
-class ComplexHeader implements IFooter
+require_once($_SERVER['DOCUMENT_ROOT'].'/PHP Interfaces/IFooter.php');
+class ComplexFooter implements IFooter
 {
 
     public function generateFooter()
@@ -14,13 +15,13 @@ class ComplexHeader implements IFooter
         $result=<<<FOOTER
 <footer>
     <div id="footer">
-        <p>Наши контакты:</p>
+        <p>РќР°С€Рё РєРѕРЅС‚Р°РєС‚С‹:</p>
 
         <ul>
             <li class="fa fa-phone" aria-hidden="true"> 8 (917) 221-28-32
             <li class="fa fa-envelope-o" aria-hidden="true"> info@kinokrut.com
-            <li class="fa fa-map-marker" aria-hidden="true"> г. Казань, ул. Дементьева, д. 70а
-            <li id=name>Компания «Kinokrut Laboratory»</li>
+            <li class="fa fa-map-marker" aria-hidden="true"> Рі. РљР°Р·Р°РЅСЊ, СѓР». Р”РµРјРµРЅС‚СЊРµРІР°, Рґ. 70Р°
+            <li id=name>РљРѕРјРїР°РЅРёСЏ В«Kinokrut LaboratoryВ»</li>
         </ul>
         <nav id="scl">
             <a href="https://vk.com/kinokrutlaboratory" id=VKlink target="_blank"></a>
@@ -34,7 +35,7 @@ class ComplexHeader implements IFooter
             frameborder="0" style="border:0" allowfullscreen></iframe>
 
         <address>
-            &copy; Компания «Kinokrut Laboratory», Казань 2016 г.
+            &copy; РљРѕРјРїР°РЅРёСЏ В«Kinokrut LaboratoryВ», РљР°Р·Р°РЅСЊ 2016 Рі.
         </address>
     </div>
 </footer>

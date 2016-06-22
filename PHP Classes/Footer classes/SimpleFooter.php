@@ -6,6 +6,7 @@
  * Date: 22.06.2016
  * Time: 19:11
  */
+require_once($_SERVER['DOCUMENT_ROOT'].'/PHP Interfaces/IFooter.php');
 class SimpleFooter implements IFooter
 {
 
@@ -13,7 +14,7 @@ class SimpleFooter implements IFooter
     {
         $result=<<<FOOTER
 <address>
-    &copy; Компания «Kinokrut Laboratory», Казань 2016 г.
+    &copy; РљРѕРјРїР°РЅРёСЏ В«Kinokrut LaboratoryВ», РљР°Р·Р°РЅСЊ 2016 Рі.
 </address>
 </body>
 </html>

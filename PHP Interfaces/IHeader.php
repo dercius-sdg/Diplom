@@ -9,4 +9,6 @@
 interface IHeader
 {
     public function generateHeader();
+    public function setConnectingCssFiles();
+    public function setConnectingJsFiles();
 }

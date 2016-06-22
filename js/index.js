@@ -56,6 +56,7 @@ $(document).ready(
 
                 for(var counter=0;counter<portfolios.length;counter++)
                 {
+                    if (counter==1) continue;
                     setIntervalForSliding(counter);
                 }
             },5000
