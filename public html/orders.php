@@ -95,7 +95,7 @@
                     <li data-src="/img/Оборудование/Slidekamera 1500.jpg">Slidecamera<span class="fa fa-check-circle fa-2x icon"></span></li>
                 </ul>
             </div>
-            <div id="eq-image-container" class="col-lg-4 col-lg-offset-4">
+            <div id="eq-image-container" class="col-lg-5 col-lg-offset-3">
 
             </div>
         </div>
@@ -116,7 +116,7 @@
                     <li data-src="/img/photostudio_03.jpg">Киностудия 4<span class="fa fa-check-circle fa-2x icon"></span></li>
                 </ul>
             </div>
-            <div id="apart-image-container" class="col-lg-4 col-lg-offset-4">
+            <div id="apart-image-container" class="col-lg-5 col-lg-offset-3">
 
             </div>
         </div>

@@ -33,7 +33,7 @@ h2
     display: block;
     height: 300px;
     margin: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 #eq-list ul li
@@ -75,7 +75,7 @@ h2
     display: block;
     height: 300px;
     margin: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 #apart-list ul li
