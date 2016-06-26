@@ -14,16 +14,16 @@ class Page
 {
     private $header;
     private $footer;
-    public function __construct($isSimple=true)
+    public function __construct($isSimple=true,$isCheckOut=false)
     {
         if($isSimple)
         {
-            $this->header=new SimpleHeader();
+            $this->header=new SimpleHeader($isCheckOut);
             $this->footer=new SimpleFooter();
         }
         else
         {
-            $this->header=new ComplexHeader();
+            $this->header=new ComplexHeader($isCheckOut);
             $this->footer=new ComplexFooter();
         }
     }
