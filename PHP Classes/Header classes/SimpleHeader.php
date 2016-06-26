@@ -12,7 +12,11 @@ class SimpleHeader implements IHeader
 
     private $cssFiles = array();
     private $jsFiles = array();
-
+    private $isCheckout;
+    public function __construct($isCheckout=false)
+    {
+        $this->isCheckout=$isCheckout;
+    }
     public function generateHeader()
     {
         $result = <<<HEADER
@@ -33,6 +37,7 @@ HEADER;
         }
         $result .= <<<HEADER
     <script src="/js/jquery-2.2.3.min.js" charset="utf-8"></script>
+    <script src="/js/bootstrap.js" charset="utf-8"></script>
 HEADER;
         foreach ($this->jsFiles as $jsValue) {
             $result .= "<script src='" . $jsValue . "' charset='utf-8'></script>";
@@ -49,8 +54,17 @@ HEADER;
             <a class="header_link" href="/public%20html/Employees.html">О нас</a>
             <a class="header_link" href="/index.php#comment-ribbon">Отзывы</a>
             <a class="header_link" href=#footer>Контакты</a>
-            <a class="header_link">Личный кабинет</a>
-            <a id="icon-checking" class="fa fa-sign-in fa-2x header_link"></a>
+            <a class="header_link" href="/public%20html/Private_office.php">Личный кабинет</a>
+HEADER;
+        if($this->isCheckout)
+        {
+            $result.="<a class='header_link'>Выйти</a>";
+        }
+        else
+        {
+            $result.="<a id='icon-checking' class='fa fa-sign-in fa-2x header_link'></a>";
+        }
+        $result.=<<<HEADER
         </nav>
         <div ID="triangle_container">
             <div id="Window">
