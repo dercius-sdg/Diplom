@@ -7,7 +7,7 @@ $(document).ready(
         console.log($("body").height());
         console.log($("#header").height());
         console.log($("footer").height());
-        $("#bordered-shadow").height($("body").height()-$("footer").height()-$("#header").height()+500);
+        $("#bordered-shadow").height($("body").height()-$("footer").height()-$("#header").height()+650);
 
     }
 );

@@ -189,15 +189,34 @@ li.comment
 #more-comments
 {
     outline: 2px solid black;
-    margin: 20px auto 150px;
+    margin: 0 10px;
     width: 250px;
     height: 60px;
-    display: block;
+    display: inline-block;
     font-family: Roboto;
     font-size: 20px;
     border:5px solid white;
     background: black;
     color: white;
+}
+#add-comment
+{
+    outline: 2px solid black;
+    margin: 0 10px;
+    width: 250px;
+    height: 60px;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 20px;
+    border:5px solid white;
+    background: black;
+    color: white;
+}
+#button-panel
+{
+    height: 60px;
+    margin:  0 auto;
+    width: 550px;
 }
 .portfolio-header{
     text-align: center;
@@ -207,4 +226,10 @@ li.comment
 img.portfolio:hover
 {
     cursor: hand;
+}
+#modal-comment
+{
+    width: 100%;
+    resize: none;
+    height: 150px;
 }

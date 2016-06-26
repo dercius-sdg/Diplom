@@ -77,6 +77,12 @@ $(document).ready(
                 );
             }
         );
+        $("#publish-button").click(
+            function()
+            {
+                $("#myModal").modal('hide');
+            }
+        );
 }
 );
 
